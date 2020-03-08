@@ -26,8 +26,7 @@ Mat HObject2Mat(HObject Hobj) {//Halocn Image and Opencv Image interconvert
         BYTE * pdata = (BYTE *)ptr.L();
         memcpy(Image.data, pdata, W*H);
     }
-    else if (htCh[0].I() == 3)
-    {
+    else if (htCh[0].I() == 3){
         HTuple ptrR, ptrG, ptrB;
         GetImagePointer3(Hobj, &ptrR, &ptrG, &ptrB, &cType, &wid, &hgt);
         W = (Hlong)wid;
