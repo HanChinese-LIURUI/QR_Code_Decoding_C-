@@ -11,11 +11,12 @@ Mat HObject2Mat(HObject Hobj) {//Halocn Image and Opencv Image interconvert
     HTuple htCh = HTuple();
     HTuple cType;
     Mat Image;
-    ConvertImageType(Hobj, &Hobj, "byte");
-    CountChannels(Hobj, &htCh);
     HTuple wid;
     HTuple hgt;
     int W, H;
+
+    ConvertImageType(Hobj, &Hobj, "byte");
+    CountChannels(Hobj, &htCh);
 
     if (htCh[0].I() == 1){
         HTuple ptr;
