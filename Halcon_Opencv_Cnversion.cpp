@@ -3,6 +3,7 @@
 #  include "ctime"
 #  include "vector"
 
+
 using namespace cv;
 using namespace std;
 using namespace HalconCpp;
