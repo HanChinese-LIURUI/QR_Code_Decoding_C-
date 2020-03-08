@@ -16,8 +16,7 @@ Mat HObject2Mat(HObject Hobj) {//Halocn Image and Opencv Image interconvert
     HTuple wid;
     HTuple hgt;
     int W, H;
-    if (htCh[0].I() == 1)
-    {
+    if (htCh[0].I() == 1){
         HTuple ptr;
         GetImagePointer1(Hobj, &ptr, &cType, &wid, &hgt);
         W = (Hlong)wid;
