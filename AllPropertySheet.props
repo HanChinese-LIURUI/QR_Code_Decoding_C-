@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>C:\Program Files\MVTec\HALCON-18.11-Progress\include;C:\Opencv\opencv\build\include;C:\Opencv\opencv\build\include\opencv2;C:\Program Files\MVTec\HALCON-18.11-Progress\include\halconcpp;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Opencv\opencv\build\x64\vc15\lib;C:\Program Files\MVTec\HALCON-18.11-Progress\bin\x64-win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>C:\Opencv\opencv\build\x64\vc15\lib\opencv_world420d.lib;C:\Program Files\MVTec\HALCON-18.11-Progress\lib\x64-win64\halconcpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files\MVTec\HALCON-18.11-Progress\bin\x64-win64</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
